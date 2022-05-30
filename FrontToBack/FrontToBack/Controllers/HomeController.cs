@@ -26,7 +26,10 @@ namespace FrontToBack.Controllers
             homeVM.Promos = await _context.Promos.Where(n => !n.IsDeleted).ToListAsync();
             homeVM.Promos2 = await _context.Promos2.Where(n => !n.IsDeleted).ToListAsync();
             homeVM.Categories = await _context.Categories.Where(n => !n.IsDeleted).ToListAsync();
-            homeVM.Products = await _context.Products.Include(n => n.Category).Where(n => !n.IsDeleted).ToListAsync();
+            homeVM.Products = await _context.Products.Include(n => n.Category).Include(n => n.Author).Where(n => !n.IsDeleted).ToListAsync();
+            homeVM.FeaturedProducts = await _context.Products.Include(n => n.Category).Include(n => n.Author).Where(n => !n.IsDeleted).Where(n => n.IsFeatured).Take(10).ToListAsync();
+            homeVM.DiscountedProducts = await _context.Products.Include(n => n.Category).Include(n => n.Author).Where(n => !n.IsDeleted).Where(n => n.Discount > 0).Take(10).ToListAsync();
+            homeVM.NewProducts = await _context.Products.Include(n => n.Category).Include(n => n.Author).Where(n => !n.IsDeleted).Where(n => n.IsNew).Take(10).ToListAsync();
 
             return View(homeVM);
         }
