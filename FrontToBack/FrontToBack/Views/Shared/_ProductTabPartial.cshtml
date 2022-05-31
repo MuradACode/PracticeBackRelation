@@ -1,0 +1,67 @@
+﻿<div class="product-slider multiple-row  slider-border-multiple-row  sb-slick-slider"
+     data-slick-setting='{
+                            "autoplay": true,
+                            "autoplaySpeed": 8000,
+                            "slidesToShow": 5,
+                            "rows":1,
+                            "dots":true
+                        }' data-slick-responsive='[
+                            {"breakpoint":1200, "settings": {"slidesToShow": 3} },
+                            {"breakpoint":768, "settings": {"slidesToShow": 2} },
+                            {"breakpoint":480, "settings": {"slidesToShow": 1} },
+                            {"breakpoint":320, "settings": {"slidesToShow": 1} }
+                        ]'>
+    @foreach (Product prod in Model)
+    {
+        <div class="single-slide">
+            <div class="product-card">
+                <div class="product-header">
+                    <a href="#" class="author">
+                        @prod.Author.Fullname
+                    </a>
+                    <h3>
+                        <a href="product-details.html">
+                        </a>
+                    </h3>
+                </div>
+                <div class="product-card--body">
+                    <div class="card-image">
+                        <img src="~/assets/image/products/...">
+                        <div class="hover-contents">
+                            <a href="product-details.html" class="hover-image">
+                                <img src="~/assets/image/products/..." alt="">
+                            </a>
+                            <div class="hover-btns">
+                                <a href="cart.html" class="single-btn">
+                                    <i class="fas fa-shopping-basket"></i>
+                                </a>
+                                <a href="wishlist.html" class="single-btn">
+                                    <i class="fas fa-heart"></i>
+                                </a>
+                                <a href="compare.html" class="single-btn">
+                                    <i class="fas fa-random"></i>
+                                </a>
+                                <a href="#" data-toggle="modal" data-target="#quickModal"
+                                   class="single-btn">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-block">
+                        @if (prod.Discount > 0)
+                        {
+                            <span class="price">@(prod.SellPrice - prod.Discount)</span>
+                            <del class="price-old">@prod.SellPrice</del>
+                            <span class="price-discount">-@prod.Discount$</span>
+                        }
+                        else
+                        {
+                            <span class="price">@prod.SellPrice</span>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
