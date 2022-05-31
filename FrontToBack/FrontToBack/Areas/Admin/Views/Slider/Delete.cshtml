@@ -1,0 +1,21 @@
+﻿@model Slider
+
+<div class="container>
+    <div class="row>
+        <div class="col-md-6 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Slider - Delete</h4>
+                    <form method="post" asp-route-id="@Model.Id class="forms-sample">
+                        <div class="form-group">
+                            <label for="sliderTitle1">Please type your Title1 if you sure</label>
+                            <input value="@Model.Title1" name="sliderTitle1" type="text" class="form-control" id="sliderTitle1" placeholder="Title1">
+                        </div>
+                        <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                        <a asp-area="admin" asp-controller="slider" asp-action="details" asp-route-id="@Model.Id" class="btn btn-primary">Cancel</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
