@@ -1,0 +1,21 @@
+﻿@model Promo2
+
+<div class="container>
+    <div class="row>
+        <div class="col-md-6 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Promos 2 - Update</h4>
+                    <form method="post" class="forms-sample">
+                        <div class="form-group">
+                            <label asp-for="@Model.Title1">Title1</label>
+                            <input asp-for="@Model.Title1" class="form-control" placeholder="Title1">
+                        </div>
+                        <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                        <a asp-area="admin" asp-controller="promo2" asp-action="details" asp-route-id="@Model.Id" class="btn btn-light">Cancel</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

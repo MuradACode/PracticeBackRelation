@@ -1,0 +1,37 @@
+﻿@model Promo2
+
+<div class="container>
+    <div class="row>
+        <div class="col-md-6 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Promos 2 - Create</h4>
+                    <form method="post" class="forms-sample">
+                        <div class="form-group">
+                            <label asp-for="@Model.Title1">Title1</label>
+                            <input asp-for="@Model.Title1" class="form-control" id="promo2Title1" placeholder="Title1">
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="@Model.Title2">Title2</label>
+                            <input asp-for="@Model.Title2" class="form-control" id="promo2Title2" placeholder="Title2">
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="@Model.RedirectedUrl">Description</label>
+                            <input asp-for="@Model.RedirectedUrl" class="form-control" id="promo2RedirectedUrl" placeholder="Redirected Url">
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="@Model.ButtonText">Redirected Url</label>
+                            <input asp-for="@Model.ButtonText" class="form-control" id="promo2ButtonText" placeholder="Button Text">
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="@Model.ButtonUrl">Redirected Url Text</label>
+                            <input asp-for="@Model.ButtonUrl" class="form-control" id="promo2ButtonUrl" placeholder="Button Url">
+                        </div>
+                        <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                        <a asp-area="admin" asp-controller="promo2" asp-action="index" class="btn btn-light">Cancel</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

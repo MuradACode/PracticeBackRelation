@@ -6,13 +6,29 @@
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title">Slider - Update</h4>
-                        <form method="post" class="forms-sample">
+                        <form method="post" asp-route-id="@Model.Id" class="forms-sample">
                             <div class="form-group">
-                                <label asp-for="@Model.Title1">Title1</label>
-                                <input asp-for="@Model.Title1" class="form-control" id="sliderTitle1" placeholder="Title1">
+                                <label for="sliderTitle1">Title1</label>
+                                <input value="@Model.Title1" name="sliderTitle1" type="text" class="form-control" id="sliderTitle1" placeholder="Title1">
+                            </div>
+                            <div class="form-group">
+                                <label for="sliderTitle2">Title2</label>
+                                <input value="@Model.Title2" name="sliderTitle2" type="text" class="form-control" id="sliderTitle2" placeholder="Title2">
+                            </div>
+                            <div class="form-group">
+                                <label for="sliderDesc">Description</label>
+                                <input value="@Model.Desc" name="sliderDesc" type="text" class="form-control" id="sliderDesc" placeholder="Description">
+                            </div>
+                            <div class="form-group">
+                                <label for="sliderRedirectedUrl">Redirected Url</label>
+                                <input value="@Model.RedirectedUrl" name="sliderRedirectedUrl" type="text" class="form-control" id="sliderRedirectedUrl" placeholder="Redirected Url">
+                            </div>
+                            <div class="form-group">
+                                <label for="sliderRedirectedUrlText">Redirected Url Text</label>
+                                <input value="@Model.RedirectedUrlText" name="sliderRedirectedUrlText" type="text" class="form-control" id="sliderRedirectedUrlText" placeholder="Redirected Url Text">
                             </div>
                             <button type="submit" class="btn btn-primary mr-2">Submit</button>
-                            <a asp-area="admin" asp-controller="slider" asp-action="details" asp-route-id="@Model.Id" class="btn btn-primary">Cancel</a>
+                            <a asp-area="admin" asp-controller="slider" asp-action="details" asp-route-id="@Model.Id" class="btn btn-light">Cancel</a>
                         </form>
                     </div>
                 </div>

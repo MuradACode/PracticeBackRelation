@@ -5,14 +5,14 @@
         <div class="col-md-6 grid-margin stretch-card">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title">Slider - Delete</h4>
-                    <form method="post" asp-route-id="@Model.Id class="forms-sample">
+                    <h4 class="card-title">Slider - Update</h4>
+                    <form method="post" class="forms-sample">
                         <div class="form-group">
-                            <label for="sliderTitle1">Please type your Title1 if you sure</label>
-                            <input value="@Model.Title1" name="sliderTitle1" type="text" class="form-control" id="sliderTitle1" placeholder="Title1">
+                            <label asp-for="@Model.Title1">Title1</label>
+                            <input asp-for="@Model.Title1" class="form-control" placeholder="Title1">
                         </div>
                         <button type="submit" class="btn btn-primary mr-2">Submit</button>
-                        <a asp-area="admin" asp-controller="slider" asp-action="details" asp-route-id="@Model.Id" class="btn btn-primary">Cancel</a>
+                        <a asp-area="admin" asp-controller="slider" asp-action="details" asp-route-id="@Model.Id" class="btn btn-light">Cancel</a>
                     </form>
                 </div>
             </div>

@@ -495,3 +495,15 @@ C:\Users\murad\OneDrive\Рабочий стол\PracticeBackRelation\FrontToBack
 C:\Users\murad\OneDrive\Рабочий стол\PracticeBackRelation\FrontToBack\FrontToBack\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ProductTabPartial.cshtml.g.cs
 C:\Users\murad\OneDrive\Рабочий стол\PracticeBackRelation\FrontToBack\FrontToBack\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Slider\Create.cshtml.g.cs
 C:\Users\murad\OneDrive\Рабочий стол\PracticeBackRelation\FrontToBack\FrontToBack\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Slider\Delete.cshtml.g.cs
+C:\Users\tu7nxdvhu\Desktop\New folder\PracticeBackRelation\FrontToBack\FrontToBack\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Slider\Create.cshtml.g.cs
+C:\Users\tu7nxdvhu\Desktop\New folder\PracticeBackRelation\FrontToBack\FrontToBack\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Slider\Delete.cshtml.g.cs
+C:\Users\tu7nxdvhu\Desktop\New folder\PracticeBackRelation\FrontToBack\FrontToBack\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Promo1\Create.cshtml.g.cs
+C:\Users\tu7nxdvhu\Desktop\New folder\PracticeBackRelation\FrontToBack\FrontToBack\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Promo1\Delete.cshtml.g.cs
+C:\Users\tu7nxdvhu\Desktop\New folder\PracticeBackRelation\FrontToBack\FrontToBack\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Promo1\Details.cshtml.g.cs
+C:\Users\tu7nxdvhu\Desktop\New folder\PracticeBackRelation\FrontToBack\FrontToBack\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Promo1\Index.cshtml.g.cs
+C:\Users\tu7nxdvhu\Desktop\New folder\PracticeBackRelation\FrontToBack\FrontToBack\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Promo1\Update.cshtml.g.cs
+C:\Users\tu7nxdvhu\Desktop\New folder\PracticeBackRelation\FrontToBack\FrontToBack\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Promo2\Create.cshtml.g.cs
+C:\Users\tu7nxdvhu\Desktop\New folder\PracticeBackRelation\FrontToBack\FrontToBack\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Promo2\Delete.cshtml.g.cs
+C:\Users\tu7nxdvhu\Desktop\New folder\PracticeBackRelation\FrontToBack\FrontToBack\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Promo2\Details.cshtml.g.cs
+C:\Users\tu7nxdvhu\Desktop\New folder\PracticeBackRelation\FrontToBack\FrontToBack\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Promo2\Index.cshtml.g.cs
+C:\Users\tu7nxdvhu\Desktop\New folder\PracticeBackRelation\FrontToBack\FrontToBack\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Promo2\Update.cshtml.g.cs

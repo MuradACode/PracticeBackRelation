@@ -11,16 +11,47 @@
                     <h4 class="card-title">Slides</h4>
                     <div class="table-responsive">
                         <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Title1
+                                    </th>
+                                    <th>
+                                        Title2
+                                    </th>
+                                    <th>
+                                        Description
+                                    </th>
+                                    <th>
+                                        Redirected Url
+                                    </th>
+                                    <th>
+                                        Redirected Url Text
+                                    </th>
+                                </tr>
+                            </thead>
                             <tbody>
-                                    <tr>
-                                        <td>
-                                            @Model.Title1
-                                        </td>
-                                        <td>
-                                            <a asp-area="admin" asp-controller="slider" asp-action="update" asp-route-id="@Model.Id" class="btn btn-warning">Update</a>
-                                            <a asp-area="admin" asp-controller="slider" asp-action="delete" asp-route-id="@Model.Id" class="btn btn-danger">Delete</a>
-                                        </td>
-                                    </tr>
+                                <tr>
+                                    <td>
+                                        @Model.Title1
+                                    </td>
+                                    <td>
+                                        @Model.Title2
+                                    </td>
+                                    <td>
+                                        @Model.Desc
+                                    </td>
+                                    <td>
+                                        @Model.RedirectedUrl
+                                    </td>
+                                    <td>
+                                        @Model.RedirectedUrlText
+                                    </td>
+                                    <td>
+                                        <a asp-area="admin" asp-controller="slider" asp-action="update" asp-route-id="@Model.Id" class="btn btn-warning mb-3">Update</a>
+                                        <a asp-area="admin" asp-controller="slider" asp-action="delete" asp-route-id="@Model.Id" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>

@@ -1,0 +1,21 @@
+﻿@model Promo
+
+<div class="container>
+    <div class="row>
+        <div class="col-md-6 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Promos 1 - Update</h4>
+                    <form method="post" asp-route-id="@Model.Id" class="forms-sample">
+                        <div class="form-group">
+                            <label for="promoRedirectedUrl">Redirected Url</label>
+                            <input value="@Model.RedirectedUrl" name="promoRedirectedUrl" type="text" class="form-control" id="promoRedirectedUrl" placeholder="Redirected Url">
+                        </div>
+                        <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                        <a asp-area="admin" asp-controller="promo1" asp-action="details" asp-route-id="@Model.Id" class="btn btn-light">Cancel</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
