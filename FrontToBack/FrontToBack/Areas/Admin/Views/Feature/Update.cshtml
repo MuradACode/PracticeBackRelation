@@ -1,0 +1,29 @@
+﻿@model Feature
+
+<div class="container>
+    <div class="row>
+        <div class="col-md-6 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Feature - Update</h4>
+                    <form method="post" asp-route-id="@Model.Id" class="forms-sample">
+                        <div class="form-group">
+                            <label for="featureIconUrl">Icon Url</label>
+                            <input value="@Model.IconUrl" name="featureIconUrl" type="text" class="form-control" id="featureIconUrl" placeholder="Icon Url">
+                        </div>
+                        <div class="form-group">
+                            <label for="featureTitle">Title</label>
+                            <input value="@Model.Title" name="featureTitle" type="text" class="form-control" id="featureTitle" placeholder="Title">
+                        </div>
+                        <div class="form-group">
+                            <label for="featureDesc">Description</label>
+                            <input value="@Model.Desc" name="featureDesc" type="text" class="form-control" id="featureDesc" placeholder="Description">
+                        </div>
+                        <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                        <a asp-area="admin" asp-controller="feature" asp-action="details" asp-route-id="@Model.Id" class="btn btn-light">Cancel</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

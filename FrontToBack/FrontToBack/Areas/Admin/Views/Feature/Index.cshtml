@@ -1,4 +1,4 @@
-﻿@model List<Slider>
+﻿@model List<Feature>
 
 <div class="container">
     <div class="row">
@@ -7,9 +7,9 @@
                 <div class="card-body">
                     <div class="d-flex justify-content-between mb-4">
                         <a class="btn btn-primary" asp-area="admin" asp-controller="dashboard" asp-action="index">Go Back</a>
-                        <a class="btn btn-success" asp-area="admin" asp-controller="slider" asp-action="create">Create</a>
-                    </div> 
-                    <h4 class="card-title">Sliders</h4>
+                        <a class="btn btn-success" asp-area="admin" asp-controller="feature" asp-action="create">Create</a>
+                    </div>
+                    <h4 class="card-title">Features</h4>
                     <div class="table-responsive">
                         <table class="table table-striped">
                             <thead>
@@ -23,16 +23,16 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach (Slider slider in Model)
+                                @foreach (Feature feature in Model)
                                 {
                                     <tr>
                                         <td>
-                                            @slider.Title1
+                                            @feature.Title
                                         </td>
                                         <td>
-                                            <a asp-area="admin" asp-controller="slider" asp-action="details" asp-route-id="@slider.Id" class="btn btn-primary">Details</a>
-                                            <a asp-area="admin" asp-controller="slider" asp-action="update" asp-route-id="@slider.Id" class="btn btn-warning">Update</a>
-                                            <a asp-area="admin" asp-controller="slider" asp-action="delete" asp-route-id="@slider.Id" class="btn btn-danger">Delete</a>
+                                            <a asp-area="admin" asp-controller="feature" asp-action="details" asp-route-id="@feature.Id" class="btn btn-primary">Details</a>
+                                            <a asp-area="admin" asp-controller="feature" asp-action="update" asp-route-id="@feature.Id" class="btn btn-warning">Update</a>
+                                            <a asp-area="admin" asp-controller="feature" asp-action="delete" asp-route-id="@feature.Id" class="btn btn-danger">Delete</a>
                                         </td>
                                     </tr>
                                 }

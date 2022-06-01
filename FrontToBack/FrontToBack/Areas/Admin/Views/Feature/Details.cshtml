@@ -1,4 +1,4 @@
-﻿@model Slider
+﻿@model Feature
 
 <div class="container">
     <div class="row">
@@ -6,50 +6,38 @@
             <div class="card">
                 <div class="card-body">
                     <div class="d-flex justify-content-between">
-                        <a class="btn btn-primary mb-4" asp-area="admin" asp-controller="slider" asp-action="index">Go Back</a>
+                        <a class="btn btn-primary mb-4" asp-area="admin" asp-controller="feature" asp-action="index">Go Back</a>
                     </div>
-                    <h4 class="card-title">Slider</h4>
+                    <h4 class="card-title">Slides</h4>
                     <div class="table-responsive">
                         <table class="table table-striped">
                             <thead>
                                 <tr>
                                     <th>
-                                        Title1
+                                        IconUrl
                                     </th>
                                     <th>
-                                        Title2
+                                        Title
                                     </th>
                                     <th>
                                         Description
-                                    </th>
-                                    <th>
-                                        Redirected Url
-                                    </th>
-                                    <th>
-                                        Redirected Url Text
                                     </th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>
-                                        @Model.Title1
+                                        @Model.IconUrl
                                     </td>
                                     <td>
-                                        @Model.Title2
+                                        @Model.Title
                                     </td>
                                     <td>
                                         @Model.Desc
                                     </td>
                                     <td>
-                                        @Model.RedirectedUrl
-                                    </td>
-                                    <td>
-                                        @Model.RedirectedUrlText
-                                    </td>
-                                    <td>
-                                        <a asp-area="admin" asp-controller="slider" asp-action="update" asp-route-id="@Model.Id" class="btn btn-warning mb-3">Update</a>
-                                        <a asp-area="admin" asp-controller="slider" asp-action="delete" asp-route-id="@Model.Id" class="btn btn-danger">Delete</a>
+                                        <a asp-area="admin" asp-controller="feature" asp-action="update" asp-route-id="@Model.Id" class="btn btn-warning">Update</a>
+                                        <a asp-area="admin" asp-controller="feature" asp-action="delete" asp-route-id="@Model.Id" class="btn btn-danger">Delete</a>
                                     </td>
                                 </tr>
                             </tbody>

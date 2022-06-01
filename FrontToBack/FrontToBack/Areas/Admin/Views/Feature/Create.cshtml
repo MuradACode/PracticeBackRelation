@@ -1,0 +1,29 @@
+﻿@model Feature
+
+<div class="container>
+    <div class="row>
+        <div class="col-md-6 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Feature - Create</h4>
+                    <form method="post" class="forms-sample">
+                        <div class="form-group">
+                            <label asp-for="@Model.IconUrl">Icon Url</label>
+                            <input asp-for="@Model.IconUrl" class="form-control" id="featureIconUrl" placeholder="Icon Url">
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="@Model.Title">Title</label>
+                            <input asp-for="@Model.Title" class="form-control" id="featureTitle" placeholder="Title">
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="@Model.Desc">Description</label>
+                            <input asp-for="@Model.Desc" class="form-control" id="featureDesc" placeholder="Description">
+                        </div>
+                        <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                        <a asp-area="admin" asp-controller="slider" asp-action="index" class="btn btn-light">Cancel</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
