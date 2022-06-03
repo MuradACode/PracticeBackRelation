@@ -1,0 +1,37 @@
+﻿@model Slider
+
+    <div class="container>
+        <div class="row>
+            <div class="col-md-6 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Slider - Create</h4>
+                        <form method="post" class="forms-sample">
+                            <div class="form-group">
+                                <label asp-for="@Model.Title1">Title1</label>
+                                <input asp-for="@Model.Title1" class="form-control" id="sliderTitle1" placeholder="Title1">
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="@Model.Title2">Title2</label>
+                                <input asp-for="@Model.Title2" class="form-control" id="sliderTitle2" placeholder="Title2">
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="@Model.Desc">Description</label>
+                                <input asp-for="@Model.Desc" class="form-control" id="sliderDesc" placeholder="Description">
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="@Model.RedirectedUrl">Redirected Url</label>
+                                <input asp-for="@Model.RedirectedUrl" class="form-control" id="sliderRedirectedUrl" placeholder="Redirected Url">
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="@Model.RedirectedUrlText">Redirected Url Text</label>
+                                <input asp-for="@Model.RedirectedUrlText" class="form-control" id="sliderRedirectedUrlText" placeholder="Redirected Url Text">
+                            </div>
+                            <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                            <a asp-area="admin" asp-controller="slider" asp-action="index" class="btn btn-light">Cancel</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

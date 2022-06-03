@@ -699,3 +699,8 @@ C:\Users\tu7nxdvhu\Desktop\New folder\PracticeBackRelation\FrontToBack\FrontToBa
 C:\Users\tu7nxdvhu\Desktop\New folder\PracticeBackRelation\FrontToBack\FrontToBack\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Feature\Details.cshtml.g.cs
 C:\Users\tu7nxdvhu\Desktop\New folder\PracticeBackRelation\FrontToBack\FrontToBack\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Feature\Index.cshtml.g.cs
 C:\Users\tu7nxdvhu\Desktop\New folder\PracticeBackRelation\FrontToBack\FrontToBack\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Feature\Update.cshtml.g.cs
+C:\Users\tu7nxdvhu\Desktop\New folder\PracticeBackRelation\FrontToBack\FrontToBack\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Product\Create.cshtml.g.cs
+C:\Users\tu7nxdvhu\Desktop\New folder\PracticeBackRelation\FrontToBack\FrontToBack\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Product\Delete.cshtml.g.cs
+C:\Users\tu7nxdvhu\Desktop\New folder\PracticeBackRelation\FrontToBack\FrontToBack\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Product\Details.cshtml.g.cs
+C:\Users\tu7nxdvhu\Desktop\New folder\PracticeBackRelation\FrontToBack\FrontToBack\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Product\Index.cshtml.g.cs
+C:\Users\tu7nxdvhu\Desktop\New folder\PracticeBackRelation\FrontToBack\FrontToBack\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Product\Update.cshtml.g.cs

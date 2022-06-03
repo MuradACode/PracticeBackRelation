@@ -1,0 +1,46 @@
+﻿@model List<Product>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between mb-4">
+                        <a class="btn btn-primary" asp-area="admin" asp-controller="dashboard" asp-action="index">Go Back</a>
+                        <a class="btn btn-success" asp-area="admin" asp-controller="slider" asp-action="create">Create</a>
+                    </div> 
+                    <h4 class="card-title">Sliders</h4>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Title
+                                    </th>
+                                    <th>
+                                        Settings
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (Product product in Model)
+                                {
+                                    <tr>
+                                        <td>
+                                            @product.Name
+                                        </td>
+                                        <td>
+                                            <a asp-area="admin" asp-controller="product" asp-action="details" asp-route-id="@product.Id" class="btn btn-primary">Details</a>
+                                            <a asp-area="admin" asp-controller="product" asp-action="update" asp-route-id="@product.Id" class="btn btn-warning">Update</a>
+                                            <a asp-area="admin" asp-controller="product" asp-action="delete" asp-route-id="@product.Id" class="btn btn-danger">Delete</a>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

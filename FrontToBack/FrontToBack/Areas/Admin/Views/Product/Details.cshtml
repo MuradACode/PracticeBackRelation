@@ -1,0 +1,92 @@
+﻿@model Product
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                        <a class="btn btn-primary mb-4" asp-area="admin" asp-controller="product" asp-action="index">Go Back</a>
+                    </div>
+                    <h4 class="card-title">Product</h4>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Name
+                                    </th>
+                                    <th>
+                                        Description
+                                    </th>
+                                    <th>
+                                        Cost Price
+                                    </th>
+                                    <th>
+                                        Sell Price
+                                    </th>
+                                    <th>
+                                        Info Text
+                                    </th>
+                                    <th>
+                                        Is New
+                                    </th>
+                                    <th>
+                                        Is Featured
+                                    </th>
+                                    <th>
+                                        Discount
+                                    </th>
+                                    <th>
+                                        Author Full Name
+                                    </th>
+                                    <th>
+                                        Category Name
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        @Model.Name
+                                    </td>
+                                    <td>
+                                        @Model.Description
+                                    </td>
+                                    <td>
+                                        @Model.CostPrice
+                                    </td>
+                                    <td>
+                                        @Model.SellPrice
+                                    </td>
+                                    <td>
+                                        @Model.InfoText
+                                    </td>
+                                    <td>
+                                        @Model.IsNew
+                                    </td>
+                                    <td>
+                                        @Model.IsFeatured
+                                    </td>
+                                    <td>
+                                        @Model.Discount
+                                    </td>
+                                    <td>
+                                        @Model.Author.Fullname
+                                    </td>
+                                    <td>
+                                        @Model.Category.Name
+                                    </td>
+                                    <td>
+                                        <a asp-area="admin" asp-controller="product" asp-action="update" asp-route-id="@Model.Id" class="btn btn-warning mb-3">Update</a>
+                                        <a asp-area="admin" asp-controller="product" asp-action="delete" asp-route-id="@Model.Id" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
