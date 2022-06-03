@@ -45,7 +45,7 @@ namespace FrontToBackTask.Areas.Admin.Controllers
         public async Task<IActionResult> Update(int id, string promoRedirectedUrl)
         {
             var promos = await _context.Promos.Where(n => !n.IsDeleted && n.Id == id).FirstOrDefaultAsync();
-            if (promos is null || string.IsNullOrEmpty(promoRedirectedUrl.Trim()))
+            if (promos is null)
             {
                 return NotFound();
             }
@@ -53,7 +53,7 @@ namespace FrontToBackTask.Areas.Admin.Controllers
             promos.UpdatedTime = DateTime.Now;
             _context.Promos.Update(promos);
             await _context.SaveChangesAsync();
-            return RedirectToAction(actionName: nameof(Details), controllerName: nameof(Promo), routeValues: new { id });
+            return RedirectToAction(actionName: nameof(Details), controllerName: "promo1", routeValues: new { id });
         }
         public async Task<IActionResult> Create()
         {
@@ -71,7 +71,7 @@ namespace FrontToBackTask.Areas.Admin.Controllers
 
             await _context.Promos.AddAsync(promo);
             await _context.SaveChangesAsync();
-            return RedirectToAction(actionName: "index", controllerName: nameof(Promo));
+            return RedirectToAction(actionName: "index", controllerName: "promo1");
         }
         public async Task<IActionResult> Delete(int id)
         {
@@ -99,7 +99,7 @@ namespace FrontToBackTask.Areas.Admin.Controllers
             dbPromo.IsDeleted = true;
             _context.Promos.Update(dbPromo);
             await _context.SaveChangesAsync();
-            return RedirectToAction(actionName: nameof(Index), controllerName: nameof(Promo));
+            return RedirectToAction(actionName: nameof(Index), controllerName: "promo1");
         }
         private async Task<bool> isPromoExists(string redirectedUrl)
         {

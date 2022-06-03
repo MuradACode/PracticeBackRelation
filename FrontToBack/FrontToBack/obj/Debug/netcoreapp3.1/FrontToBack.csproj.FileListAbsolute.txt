@@ -694,3 +694,8 @@ C:\Users\tu7nxdvhu\Desktop\PracticeBackRelation\FrontToBack\FrontToBack\obj\Debu
 C:\Users\tu7nxdvhu\Desktop\PracticeBackRelation\FrontToBack\FrontToBack\obj\Debug\netcoreapp3.1\FrontToBack.dll
 C:\Users\tu7nxdvhu\Desktop\PracticeBackRelation\FrontToBack\FrontToBack\obj\Debug\netcoreapp3.1\FrontToBack.pdb
 C:\Users\tu7nxdvhu\Desktop\PracticeBackRelation\FrontToBack\FrontToBack\obj\Debug\netcoreapp3.1\FrontToBack.genruntimeconfig.cache
+C:\Users\tu7nxdvhu\Desktop\New folder\PracticeBackRelation\FrontToBack\FrontToBack\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Feature\Create.cshtml.g.cs
+C:\Users\tu7nxdvhu\Desktop\New folder\PracticeBackRelation\FrontToBack\FrontToBack\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Feature\Delete.cshtml.g.cs
+C:\Users\tu7nxdvhu\Desktop\New folder\PracticeBackRelation\FrontToBack\FrontToBack\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Feature\Details.cshtml.g.cs
+C:\Users\tu7nxdvhu\Desktop\New folder\PracticeBackRelation\FrontToBack\FrontToBack\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Feature\Index.cshtml.g.cs
+C:\Users\tu7nxdvhu\Desktop\New folder\PracticeBackRelation\FrontToBack\FrontToBack\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Feature\Update.cshtml.g.cs

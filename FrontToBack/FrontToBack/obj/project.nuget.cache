@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ewnx508ffDKEWlrbE4AWxGFwDtiSP9W4vPEXl9m+KROnUR51jqWvKq3E10yX68x5ZWpbYtK3S34l1LoxvpUbCw==",
+  "dgSpecHash": "Lblsdrv2fZgzz+n9HlOFSV5nNdPDuBgR0UgMarOYT7gvM+B5OsGvWXLuw+dKWXhwnzZDwpY3TzByH7rDrobpzQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tu7nxdvhu\\Desktop\\PracticeBackRelation\\FrontToBack\\FrontToBack\\FrontToBack.csproj",
+  "projectFilePath": "C:\\Users\\tu7nxdvhu\\Desktop\\New folder\\PracticeBackRelation\\FrontToBack\\FrontToBack\\FrontToBack.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tu7nxdvhu\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\tu7nxdvhu\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
