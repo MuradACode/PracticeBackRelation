@@ -881,3 +881,9 @@ C:\Users\murad\OneDrive\Рабочий стол\Документы\PracticeBackR
 C:\Users\murad\OneDrive\Рабочий стол\Документы\PracticeBackRelation\FrontToBack\FrontToBack\obj\Debug\netcoreapp3.1\FrontToBack.pdb
 C:\Users\murad\OneDrive\Рабочий стол\Документы\PracticeBackRelation\FrontToBack\FrontToBack\obj\Debug\netcoreapp3.1\FrontToBack.genruntimeconfig.cache
 C:\Users\murad\OneDrive\Рабочий стол\Документы\PracticeBackRelation\FrontToBack\FrontToBack\obj\Debug\netcoreapp3.1\FrontToBack.csproj.CopyComplete
+C:\Users\tu7nxdvhu\Desktop\PracticeBackRelation\FrontToBack\FrontToBack\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Product\Create.cshtml.g.cs
+C:\Users\tu7nxdvhu\Desktop\PracticeBackRelation\FrontToBack\FrontToBack\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Product\Delete.cshtml.g.cs
+C:\Users\tu7nxdvhu\Desktop\PracticeBackRelation\FrontToBack\FrontToBack\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Product\Details.cshtml.g.cs
+C:\Users\tu7nxdvhu\Desktop\PracticeBackRelation\FrontToBack\FrontToBack\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Product\Index.cshtml.g.cs
+C:\Users\tu7nxdvhu\Desktop\PracticeBackRelation\FrontToBack\FrontToBack\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Product\Update.cshtml.g.cs
+C:\Users\tu7nxdvhu\Desktop\PracticeBackRelation\FrontToBack\FrontToBack\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ProductModalPartial.cshtml.g.cs

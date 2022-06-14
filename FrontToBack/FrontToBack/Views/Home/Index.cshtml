@@ -83,7 +83,7 @@ Home Features Section
                             <i class="@Model.Features[i].IconUrl"></i>
                         </div>
                         <div class="text">
-                            <h5>@Model.Features[i].Title</h5>
+                            <h5>@Html.Raw(Model.Features[i].Title)</h5>
                             <p> @Model.Features[i].Desc</p>
                         </div>
                     </div>

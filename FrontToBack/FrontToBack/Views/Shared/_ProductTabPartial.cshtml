@@ -1,4 +1,6 @@
-﻿<div class="product-slider multiple-row  slider-border-multiple-row  sb-slick-slider"
+﻿@model List<Product>
+
+<div class="product-slider multiple-row  slider-border-multiple-row  sb-slick-slider"
      data-slick-setting='{
                             "autoplay": true,
                             "autoplaySpeed": 8000,
@@ -21,6 +23,7 @@
                     </a>
                     <h3>
                         <a href="product-details.html">
+                            @prod.Name
                         </a>
                     </h3>
                 </div>
@@ -41,8 +44,8 @@
                                 <a href="compare.html" class="single-btn">
                                     <i class="fas fa-random"></i>
                                 </a>
-                                <a href="#" data-toggle="modal" data-target="#quickModal"
-                                   class="single-btn">
+                                <a data-id="@prod.Id" data-toggle="modal" data-target="#quickModal"
+                                   class="single-btn open-modal">
                                     <i class="fas fa-eye"></i>
                                 </a>
                             </div>

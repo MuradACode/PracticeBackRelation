@@ -9,11 +9,11 @@
                     <form method="post" class="forms-sample">
                         <div class="form-group">
                             <label asp-for="@Model.IconUrl">Icon Url</label>
-                            <input asp-for="@Model.IconUrl" class="form-control" id="featureIconUrl" placeholder="Icon Url">
+                            <input asp-for="@Model.IconUrl" class="form-control" placeholder="Icon Url">
                         </div>
                         <div class="form-group">
                             <label asp-for="@Model.Title">Title</label>
-                            <input asp-for="@Model.Title" class="form-control" id="featureTitle" placeholder="Title">
+                            <textarea asp-for="@Model.Title" class="form-control" id="CkEdit" placeholder="Title"></textarea>
                         </div>
                         <div class="form-group">
                             <label asp-for="@Model.Desc">Description</label>
@@ -27,3 +27,13 @@
         </div>
     </div>
 </div>
+
+@section CKEditor
+ {
+    <script src="https://cdn.ckeditor.com/ckeditor5/34.1.0/classic/ckeditor.js"></script>
+    <script src="~/Areas/Admin/ckeditor.js"></script>
+    <script>
+        ClassicEditor
+            .create(document.getElementById("CkEdit"))
+    </script>
+ }

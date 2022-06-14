@@ -33,5 +33,14 @@ namespace FrontToBack.Controllers
 
             return View(homeVM);
         }
+
+        public IActionResult GetProduct(int id)
+        {
+            Product product = _context.Products.FirstOrDefault(x => x.Id == id);
+
+            if (product is null) return NotFound();
+
+            return PartialView("_ProductModalPartial", product);
+        }
     }
 }
